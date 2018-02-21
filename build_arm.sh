@@ -28,7 +28,7 @@ rm kapacitor
 ln -s "kapacitor-${KAPACITOR_VERSION}"*/ kapacitor
 is_extracted ${output_path}/kapacitor/usr/bin/kapacitord
 
-echo -ne "Setting necessary configurations..."
+echo "Setting necessary configurations..."
 export GOPATH=${output_path}
 go get -v -u go.uber.org/zap
 go get -v -u gopkg.in/mgo.v2
