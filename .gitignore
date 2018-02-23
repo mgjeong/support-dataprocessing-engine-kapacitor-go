@@ -1,0 +1,12 @@
+### IDE ###
+*.iml
+*.lst
+.idea/
+.idea/*
+
+### Temporary resources ###
+docker_files/resources
+docker_files/resources/*
+
+### VIM ###
+*.swp
