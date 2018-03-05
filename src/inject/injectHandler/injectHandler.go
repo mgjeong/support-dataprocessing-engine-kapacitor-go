@@ -201,7 +201,7 @@ func jsonIntoInfluxBody(msg string) (string, string) {
 func forwardEventToKapacitor(msg string) {
 	_, err := conn.Write([]byte(msg))
 	if err != nil {
-                log.Println("Failed to forward msg via UDP")
+                log.Println("Failed to forward message via UDP")
 	}
 }
 
