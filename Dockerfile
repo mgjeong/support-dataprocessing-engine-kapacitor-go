@@ -19,7 +19,7 @@ ENV GOVERSION 1.9.1
 ENV GOROOT /opt/go
 ENV GOPATH /root/.go
 
-RUN cd /opt && wget --no-check-certificate -d https://storage.googleapis.com/golang/go${GOVERSION}.linux-amd64.tar.gz && \
+RUN cd /opt && wget -q https://storage.googleapis.com/golang/go${GOVERSION}.linux-amd64.tar.gz && \
     tar zxf go${GOVERSION}.linux-amd64.tar.gz && rm go${GOVERSION}.linux-amd64.tar.gz && \
     ln -s /opt/go/bin/go /usr/bin/ && \
     mkdir $GOPATH
